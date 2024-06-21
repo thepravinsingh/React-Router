@@ -10,7 +10,12 @@ const Navigation = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link
+              to="/about"
+              state={{ myKey: "important data", luckeyNumber: 12 }}
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link to="/pricing">
